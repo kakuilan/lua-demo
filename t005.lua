@@ -23,3 +23,18 @@ local tb2 = {"apple", "pear", "orange", "grape"}
 for key,val in pairs(tb2) do 
   print("key:", key, " value:", val)
 end  
+
+a3 = {}
+for i = 1, 10 do
+  a3[i] = i
+end
+
+a3['key'] = 'val'
+print(a3['key'])
+print(a3['none'])
+
+-- 获取表长度
+print(table.getn(a))
+print(table.maxn(tb2))
+print(#a)
+print(#a3)
