@@ -31,6 +31,3 @@ tab[1], tab[2] = tab[2], tab[1]
 for k,v in pairs(tab) do 
   print("k:", k, "v:", v)
 end
-
-
-
