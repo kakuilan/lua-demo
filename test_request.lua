@@ -12,10 +12,12 @@ location ~ /lua_request/(\d+)/(\d+) {
     echo_after_body "ngx.var.b $b";  
 }
 
+注意:修改当前lua脚本后,必须重启nginx
+
 访问地址,如
 http://lua.loc/lua_request/2/3?c=hello&d=world&e=45
-
-注意:修改当前lua脚本后,必须重启nginx
+或
+wget --post-data 'name=zhang3&age=24' 'http://lua.loc/lua_request/2/3?c=hello&d=world&e=45' -O -   
 ]]--
 
 -- nginx变量
